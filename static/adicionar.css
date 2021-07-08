@@ -1,0 +1,47 @@
+.form{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.bloco_form{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px;
+}
+
+.form_input{
+    align-items: center;
+    justify-content: end;
+    padding: 2px;
+}
+
+
+
+.form_input label{
+    font-weight: bolder;
+    padding-right: 10px;
+    align-items: flex-start;
+}
+
+.form_input input[type=text],
+select{
+    cursor: text;
+    color: mediumblue;
+    width: 200px;
+    padding: 4px;
+    margin: 5 5px;
+    display: inline-block;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.form_input input[type='submit']{
+    width: fit-content;
+}

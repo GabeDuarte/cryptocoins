@@ -1,0 +1,61 @@
+body{
+    background-color: #006494;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color:#12293d5e;
+    width:100%;
+    border-radius: 8px;
+}
+
+.header h2{
+    margin: 8px 0;
+    font-size: 30px;
+    color: #f1f1f1
+}
+
+.bloco{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 30px;
+
+}
+
+
+.logo{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.botao{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid rgb(129, 127, 127);
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    text-shadow: black 3px 3px 3px, black 3px 3px 3px, black 3px 3px 3px ;
+    padding: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--corPrincipal)
+}
+
+footer p{
+    color: rgb(121, 121, 121);
+}
+
+.header span{
+    width: 10px;
+    height: 9px;
+    border-color: aqua;
+    background-color: black;
+}

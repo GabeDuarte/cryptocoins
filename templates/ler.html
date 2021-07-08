@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de Criptomoedas</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/ler.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <script src="../static/ler_todos.js" type="text/javascript" defer></script>
+</head>
+<body>
+    
+    {% include 'header.html' %}
+    <div class="bloco">
+        <div class="info">
+
+                <div>
+                <h2>{{cripto.nome}}</h2>
+                </div>
+                
+                <br>
+
+                <div>
+                <img src="{{cripto.imagem_url}}" alt="{{cripto.nome}}" class="imagem">
+                </div>
+
+                <br>
+
+                <div class="descricao">
+                {{cripto.descricao}}
+                </div>
+            
+                <br>
+
+                <div class="bloco">
+                    <a href="/atualizar/{{cripto.id}}" class="botao">Atualizar</a>
+                
+                    <a href="/apagar/{{cripto.id}}" class="botao" onclick="alerta()">Apagar</a>
+
+                
+                    <a href="/ler_todos" class="botao"> Voltar </a>
+                </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    {% include 'footer.html' %}
+</body>
+</html>

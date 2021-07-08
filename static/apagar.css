@@ -1,0 +1,14 @@
+.removido_sucesso {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    margin: 0 50px;
+    border-radius: 4px;
+  }
+  
+  .highlight {
+    color: #ff0000;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

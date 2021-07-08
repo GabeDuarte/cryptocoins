@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apagar Cripto</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/ler.css">
+    <link rel="stylesheet" href="/static/apagar.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../static/img/Bitcoin-icon.webp" type="image/x-icon">
+</head>
+<body>
+    {% include 'header.html' %}
+
+    {% if apagado %}
+    <div class="bloco removido_sucesso">
+        <p>
+            Criptomoeda excluida com sucesso!!
+        </p>
+    </div>
+
+    <div class="bloco">
+        <a href="/ler_todos" class="botao"> Voltar </a>
+    </div>
+
+    {% elif cripto %}
+
+    <div class="bloco">
+        <h2>Deletar Criptomoeda</h2>
+    </div>
+
+    <div class="bloco">
+        <p>
+            Tem certeza que deseja excludir a Criptomoeda <span class="highlight">{{cripto.nome}}</span>?. <br>
+            <br>
+            <a href="/apagar/{{cripto.id}}/confirmed" class="botao">Excluir</a>
+            <a href="/ler/{{cripto.id}}" class="botao">Voltar</a>
+        </p>
+    </div>
+    {% else %}
+
+    <div class="bloco">
+        <h2>Deletar Criptomoeda</h2>
+    </div>
+
+    <div class="bloco">
+        <p>
+            Não foi encontrada uma criptomoeda com esse ID. <br>
+            <br>
+            <a href="/ler_todos" class="botao">Voltar</a>
+        </p>
+    </div>
+    {% endif %}
+    <br>
+    <hr>
+    {% include 'footer.html' %}
+</body>
+</html>

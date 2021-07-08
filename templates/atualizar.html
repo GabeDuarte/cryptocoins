@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Criptomoeda</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/adicionar.css">
+    <link rel="stylesheet" href="../static/atualizar.css">
+    <link rel="shortcut icon" href="../static/img/Bitcoin-icon.webp" type="image/x-icon">
+    <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    {% include 'header.html' %}
+    
+    {% if atualizado %}
+
+    <div class="bloco sucesso">
+        <p>
+            Criptomoeda atualizada com sucesso!!
+        </p>
+    </div>
+
+    {% endif %}
+
+    <div class="bloco">
+        <h2>Alterar dados da Criptomoeda</h2>
+    </div>
+
+    <div class="bloco">
+        <form class='form' method="POST">
+            <div class="bloco_form">
+                <div class="bloco form_input">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome" value="{{cripto.nome}}">
+                </div>
+
+                <div class="bloco form_input">
+                    <label for="simbolo">Simbolo: </label>
+                    <input type="text" id="simbolo" name="simbolo" value="{{cripto.simbolo}}">
+                </div>
+                
+                <div class="bloco form_input">
+                    <label for="imagem_url">URL da imagem: </label>
+                    <input type="text" id="imagem_url" name="imagem_url" value="{{cripto.imagem_url}}">
+                </div>
+
+                <div class="bloco form_input">
+                    <label for="descricao">Descrição (até 500 caracteres):</label>
+                    <input type="text" id="descricao" name="descricao" value="{{cripto.descricao}}">
+                </div>
+            </div>
+
+            <div class="bloco ">
+                <input type="submit" class="botao" value="Atualizar">
+                <a href="/ler/{{cripto.id}}" class="botao">Voltar</a>
+            </div>
+
+        </form>
+    </div>
+    <br>
+    <hr>
+    {% include 'footer.html' %}
+</body>
+</html>

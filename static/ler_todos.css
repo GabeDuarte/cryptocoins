@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+:root{
+    font-size: 62.5%;
+    --corPrincipal: #daa520;
+    --corSecundaria: #ffffff;
+}
+
+html{
+    background-color: aqua;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main{
+    margin-top: 3rem;
+    border: solid black 2px;
+    width: min(95vw, 95%);
+    background: #247BA0;
+    border-radius: .8rem;
+    display: flex;
+    justify-content: center;
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 2rem;
+    padding: 2px;
+}
+
+.cripto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: transparent;
+    width: 35rem;
+    height: 30rem;
+    margin: .8rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    border: solid black .2rem;
+    color: white;
+    
+}
+
+.cripto:hover{
+    scale: .5rem;
+    background-color: #12293d2f;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure > figcaption{
+    margin-top: 1rem;
+}
+
+.cripto > h2 > a{
+    text-decoration: none;
+    color: var(--corPrincipal);
+}
+.cripto > p{
+    font-weight: bolder;
+}
+
+main img{
+    padding: 1rem;
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+}
+
+
+.botao2{
+    display: none;
+}
+
+.apareceBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--corPrincipal);
+    width: 20rem;
+    height: 6rem;
+    font-size: 2rem;
+    color: black;
+}
+.apareceBtn > a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.desaparece{
+    display: none;
+    backdrop-filter: blur(30rem);
+}
+
+.defocaFundo{
+    filter: blur(30rem);
+}
+
+
+.footer{
+    font-size: 2rem;
+}
+
+div .botao3{
+    display: none;
+}

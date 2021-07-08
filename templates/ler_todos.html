@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/ler_todos.css">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="shortcut icon" href="../static/img/Bitcoin-icon.webp" type="image/x-icon">
+    <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <title>Catalogo de Criptomoedas</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <main class="bloco">  
+        <div class="conteudo">
+            {%for cripto in criptos %}
+                <div class="cripto" data-nome='{{cripto.nome}}'>
+                    <figure>
+                        <img src="{{cripto['imagem_url']}}" alt="{{cripto['nome']}}">
+                        <figcaption>{{cripto['simbolo']}}</figcaption>
+                    </figure>
+                    <h2><a href="/ler/{{cripto.id}}">{{cripto['nome']}}</a></h2>
+                    <div class="botao2" id="saibamais"><a href="/ler/{{cripto.id}}">Visualizar moeda</a>
+                    </div>
+                </div>
+            
+            {% endfor %}
+        </div>
+    </main>
+    <script src="../static/ler_todos.js"></script>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <div class="footer">
+        <hr>
+        <br>
+        {% include 'footer.html' %}
+    </div>
+    
+</body>
+</html>

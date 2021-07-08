@@ -1,0 +1,22 @@
+create table criptos (
+id serial primary key,
+nome varchar(60) not null,
+simbolo varchar (10) not null,
+imagem_url varchar (255) not null,
+descricao varchar(500) not null
+);
+
+
+insert into criptos (nome, simbolo, imagem_url, descricao) values ('Bitcoin', 'BTC', 'https://logosmarcas.net/wp-content/uploads/2020/08/Bitcoin-Logo.png', 'Bitcoin é uma criptomoeda descentralizada, sendo um dinheiro eletrônico para transações ponto-a-ponto.');
+
+insert into criptos (nome, simbolo, imagem_url, descricao) values ('Ethereum', 'ETH', 'https://marcas-logos.net/wp-content/uploads/2020/03/ETHEREUM-LOGO.png', 'Ethereum é uma plataforma descentralizada capaz de executar contratos inteligentes e aplicações descentralizadas usando a tecnologia blockchain: São aplicações que funcionam exatamente como programadas sem qualquer possibilidade de censura, fraude ou interferência de terceiros, isso porque o contrato é imutável.');
+
+insert into criptos (nome, simbolo, imagem_url, descricao) values ('Tether', 'USDT', 'https://seeklogo.com/images/T/tether-usdt-logo-FA55C7F397-seeklogo.com.png', 'Tether é uma criptomoeda controversa com tokens emitidos pela Tether Limited, que por sua vez é controlada pelos proprietários da Bitfinex.');
+
+insert into criptos (nome, simbolo, imagem_url, descricao) values ('Binance Coin', 'BNB', 'https://cdn.freebiesupply.com/logos/large/2x/binance-coin-logo-png-transparent.png', 'O BNB foi criado pela Binance em 2017 como sendo um token de utilidade para descontos em taxas de trading. Inicialmente emitido como um token ERC20, o BNB desde então se tornou o token nativo do blockchain da Binance Chain, e uma criptomoeda globalmente valiosa por capitalização de mercado.');
+
+insert into criptos (nome, simbolo, imagem_url, descricao) values ('Cardano', 'ADA', 'https://s3.cointelegraph.com/storage/uploads/view/a7872fcc56858227ffa183256a5d55e1.png', 'Cardano é uma plataforma de computação distribuída que executa o blockchain para a criptomoeda ADA. Cardano foi criada pela empresa de desenvolvimento de blockchain Input Output Hong Kong e liderado pelo CEO Charles Hoskinson, ex-co-fundador da BitShares, Ethereum e Ethereum Classic.');
+
+insert into criptos (nome, simbolo, imagem_url, descricao) values ('Dogecoin', 'DOGE', 'https://img2.gratispng.com/20180413/sge/kisspng-dogecoin-cryptocurrency-dash-digital-currency-doge-5ad13b0da01474.3329552115236615816557.jpg', 'A Dogecoin é uma criptomoeda criada em 2013 por uma dupla de engenheiros de software como uma piada. Tanto é que o símbolo da moeda é um cachorro da raça shiba inu, muito utilizado como meme na internet.');
+
+

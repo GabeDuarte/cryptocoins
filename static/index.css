@@ -1,0 +1,13 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    
+}
+main{
+    width: 100%;
+    height: 90%;
+}
+
+div{
+    background-image: url("/projeto-cripto/static/img/blockchain-3206918_1280.png");
+}
